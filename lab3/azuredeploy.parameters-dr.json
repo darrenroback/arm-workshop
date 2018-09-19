@@ -20,7 +20,7 @@
             "value": "ubuntuSubnet"
         },
         "dnslabelprefix": {
-            "value": "droback-"
+            "value": "drobacklab3"
         }
     }
 }

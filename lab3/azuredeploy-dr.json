@@ -216,6 +216,10 @@
         "osDiskId": {
             "type": "string",
             "value": "[reference(variables('vmId')).storageProfile.osDisk.managedDisk.id]"
+        },
+        "vmRef": {
+            "type": "object",
+            "value": "[reference(variables('vmId'))]"
         }
     }
 }
