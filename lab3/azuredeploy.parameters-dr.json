@@ -1,0 +1,26 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "adminUsername": {
+            "value": "droback"
+        },
+        "adminPassword": {
+            "reference": {
+                "keyVault": {
+                    "id": "/subscriptions/3e381a95-362f-4021-953a-3ce2e00006d4/resourceGroups/keyVaults/providers/Microsoft.KeyVault/vaults/droback-key-vault"
+                },
+                "secretName": "ubuntuDefaultPassword"
+            }
+        },
+        "vnetName": {
+            "value": "ubuntuVnet"
+        },
+        "subnetName": {
+            "value": "ubuntuSubnet"
+        },
+        "dnslabelprefix": {
+            "value": "droback-"
+        }
+    }
+}
