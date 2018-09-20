@@ -21,6 +21,9 @@
         },
         "dnslabelprefix": {
             "value": "drobacklab3"
+        },
+        "vmName": {
+            "value": "ubuntuVM-1"
         }
     }
 }

@@ -78,7 +78,7 @@
         "imagePublisher": "Canonical",
         "imageOffer": "UbuntuServer",
         "storageAccountType": "Standard_LRS",
-        "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'salinuxvm')]",
+        "storageAccountName": "[concat('ubuntuvm', uniquestring(resourceGroup().id))]",
         "vmId": "[resourceId('Microsoft.Compute/virtualMachines/', parameters('vmName'))]"
     },
     "resources": [
